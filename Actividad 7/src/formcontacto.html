@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="./recursos/estilos/index.css">
+</head>
+<body>
+    <header class="cabecera-principal">
+        <a href="./index.html" aria-label="Vinculo al Inicio">
+            <img src="./recursos/imagenes/pexels-vanessa-loring-5965952.jpg" alt="Imagen de Alimentos Variados">
+        </a>
+        <nav>
+            <a href="./index.html">
+                Inicio - ¿Quien Soy?/Servicios
+            </a>
+            <a href="./formcontacto.html">
+                Formulario de Contacto
+            </a>
+        </nav>
+    </header>
+    <main class="contenido-principal">
+        <h1>
+            Lic. Valentina Rosso — Nutrición y Bienestar
+        </h1>
+        <p>
+            ¿Querés dar el primer paso hacia una alimentación más saludable? Completá el siguiente formulario contándome un poco sobre vos y me pondré en contacto a la brevedad para coordinar tu primera consulta.
+        </p>
+        <form action="./formcontacto.html" method="post">
+            <label for="id_nombrecompleto">
+                Nombre Completo
+            </label>
+            <input type="text" name="nombrecompleto" id="id_nombrecompleto">
+            <label for="id_email">
+                Email
+            </label>
+            <input type="email" name="email" id="id_email">
+            <label for="id_telefono">
+                Telefono
+            </label>
+            <input type="text" name="telefono" id="id_telefono">
+            <label for="id_edad">
+                Edad
+            </label>
+            <input type="number" name="edad" id="id_edad">
+            <select name="motivoconsulta" id="id_motivoconsulta">
+                <option value="bajardepeso">
+                    Bajar de Peso
+                </option>
+                <option value="nutriciondeportiva">
+                    Nutrición Deportiva
+                </option>
+                <option value="alimentaciónconsciente">
+                    Alimentacion Consciente
+                </option>
+                 <option value="seguimientoporpatologia">
+                    Seguimiento por Patología
+                </option>
+                 <option value="otro">
+                    Otro
+                </option>
+            </select>
+            <select name="modalidad" id="id_modalidad">
+                <option value="consultoriopresencial">
+                    Consultorio - Presencial
+                </option>
+                <option value="consultaonline">
+                    Consulta Online
+                </option>
+            </select>
+            <label for="id_mensajeadicional">Mensaje Adicional</label>
+            <textarea name="mensajeadicional" id="id_mensajeadicional">
+            </textarea>
+            <button type="submit">
+                Enviar
+            </button>
+        </form>
+    </main>
+    <footer class="pie-principal">
+        <p>
+            Informacion de Contacto Rápido
+        </p>
+        <ul>
+            <li>
+                <a href="https://instagram.com/nutri.vale_rosso10">
+                    @nutri.vale_rosso10
+                </a>
+            </li>
+            <li>
+                Telefono: 3515123456
+            </li>
+            <li>
+                Email: valerosso@gmail.com
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
+
