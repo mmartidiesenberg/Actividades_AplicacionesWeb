@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Sora';
+    src: url(./fuentes/Sora-Regular.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+.encabezado-principal{
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: beige;
+    padding: 5px;
+    z-index: 1;
+}
+
+.encabezado-principal nav{
+    display: flex;
+    gap: 15px;
+}
+
+.encabezado-principal nav a {
+    color: #222;
+    text-decoration: none;
+}
+
+.encabezado-principal .boton-menu{
+    display: block; /* esto es por defecto */ 
+}
+
+.encabezado-principal a img{
+    width: 100px;
+}
+
+.encabezado-principal .vinculos a{
+    color:#222;
+}
+
+
+/* --------------- */
+.contenido-principal{
+    background-color:cornsilk;
+
+}
+
+/*
+COMPORTAMIENTO DE POSICIONAMIENTO ABSOLUTO
+*/
+.contenido-principal .parrafo{
+    position: absolute;
+    top:80px;
+    right: 50px;
+    background-color: yellowgreen;
+    padding: 10px;
+    width: 300px;
+}
+
+
+/* --------------- */
+.pie-principal{
+    background-color:cornsilk;
+}
+
+.pie-principal .mensajeria{
+    position: fixed; /* referencia es el viewport */
+    bottom: 20px;
+    right: 20px;
+    list-style: none;
+
+}
+
+
+html{
+    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-size: 16px; /* tamaño base que está en la raíz que sirve como referencia */
+}

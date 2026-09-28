@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retiro Sustentable - Catálogo</title>
+    <link rel="stylesheet" href="./recursos/css/index.css">
+</head>
+<body>
+    <!-- <header> es el elemento semántico para la cabecera; ambas páginas usan el mismo (mismo layout) -->
+    <header class="encabezado-principal">
+        <!-- El logo es un enlace al inicio. El alt es importante: lo leen los lectores de pantalla,
+             se muestra si la imagen no carga y ayuda al SEO -->
+        <a href="index.html" class="logo">
+            <img src="./recursos/imagenes/logo-rs.svg" alt="Retiro Sustentable - Ir al inicio">
+        </a>
+        <!-- <nav> es el elemento semántico para el menú principal (reemplaza al div genérico) -->
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="reservas.html">Reservas</a>
+        </nav>
+    </header>
+
+    <!-- <main> contiene el contenido principal y único de cada página -->
+    <main class="contenido-principal">
+        <h1>Catálogo de Cabañas para Alquiler</h1>
+        <!-- Es un texto de introducción, no un título: por eso es <p> y no <h2> -->
+        <p>Bienvenido a nuestro catálogo de cabañas. Explora nuestras opciones y encuentra la que mejor se adapte a tus necesidades.</p>
+
+        <!-- <section> agrupa el listado de cabañas, que es un tema del contenido -->
+        <section class="catalogo">
+            <!-- Cada cabaña es un <article>: es una unidad de contenido con sentido propio -->
+            <article class="cabana">
+                <h2>Cabaña 1</h2>
+                <img src="./recursos/imagenes/modelo1.webp" alt="Visualización del afuera de la cabaña 1">
+                <p>Cuenta con 2 habitaciones, baño privado y balcón con vista panorámica. Es para 4 personas.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                <p class="precio">$50.000 por día</p>
+                <a class="boton-reservar" href="reservas.html">Reservar esta cabaña</a>
+            </article>
+
+            <article class="cabana">
+                <h2>Cabaña 2</h2>
+                <img src="./recursos/imagenes/modelo2.jpg" alt="Visualización del afuera de la cabaña 2">
+                <p>Cuenta con 1 habitación con cama matrimonial, baño privado, comedor y balcón. Se permiten hasta 2 personas.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                <p class="precio">$35.000 por día</p>
+                <a class="boton-reservar" href="reservas.html">Reservar esta cabaña</a>
+            </article>
+
+            <article class="cabana">
+                <h2>Cabaña 3</h2>
+                <img src="./recursos/imagenes/modelo3.jpg" alt="Visualización del afuera de la cabaña 3">
+                <p>Cuenta con 2 habitaciones, baño privado y comedor. Se permiten hasta 4 personas.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                <p class="precio">$45.000 por día</p>
+                <a class="boton-reservar" href="reservas.html">Reservar esta cabaña</a>
+            </article>
+
+            <article class="cabana">
+                <h2>Cabaña 4</h2>
+                <img src="./recursos/imagenes/modelo4.jpg" alt="Visualización del afuera de la cabaña 4">
+                <p>Cuenta con 4 habitaciones, baño privado para cada habitación y comedor. Se permiten hasta 8/10 personas.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                <p class="precio">$90.000 por día</p>
+                <a class="boton-reservar" href="reservas.html">Reservar esta cabaña</a>
+            </article>
+        </section>
+    </main>
+
+    <!-- <footer> es el elemento semántico para el pie; se usa fuera del <main> -->
+    <footer class="pie-principal">
+        <p class="copyright">&copy; 2026 Retiro Sustentable. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

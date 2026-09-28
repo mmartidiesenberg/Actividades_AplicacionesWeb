@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retiro Sustentable - Reservas</title>
+    <link rel="stylesheet" href="./recursos/css/index.css">
+</head>
+<body>
+    <!-- Mismo header que en index.html para mantener el mismo layout general -->
+    <header class="encabezado-principal">
+        <!-- alt descriptivo: lectores de pantalla, imagen rota y SEO -->
+        <a href="index.html" class="logo">
+            <img src="./recursos/imagenes/logo-rs.svg" alt="Retiro Sustentable - Ir al inicio">
+        </a>
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="reservas.html">Reservas</a>
+        </nav>
+    </header>
+
+    <main class="contenido-principal">
+        <h1>Reservas</h1>
+
+        <!-- <section> agrupa el formulario como un tema propio de la página -->
+        <section class="formulario-reservas">
+            <h2>Contactanos</h2>
+            <!-- action y method: adónde y cómo se envían los datos.
+                 Cada <label for> se enlaza con el id de su campo: al hacer clic en el texto se activa
+                 el campo y los lectores de pantalla lo leen bien.
+                 El atributo name es el que identifica el dato al enviarlo -->
+            <form action="./contacto.html" method="post">
+                <label for="id-nombre">Nombre</label>
+                <input type="text" name="nombre" id="id-nombre" required>
+
+                <!-- type="tel" muestra el teclado numérico en celulares -->
+                <label for="id-telefono">Teléfono</label>
+                <input type="tel" name="telefono" id="id-telefono" required>
+
+                <!-- type="email" valida el formato del correo -->
+                <label for="id-email">Email</label>
+                <input type="email" name="email" id="id-email" required>
+
+                <!-- type="date" muestra un calendario y valida la fecha -->
+                <label for="id-desde">Fecha desde</label>
+                <input type="date" name="desde" id="id-desde" required>
+
+                <label for="id-hasta">Fecha hasta</label>
+                <input type="date" name="hasta" id="id-hasta" required>
+
+                <label for="id-comentario">Comentario</label>
+                <textarea name="comentario" id="id-comentario"></textarea>
+
+                <button type="reset">Limpiar</button>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section class="ubicacion">
+            <h2>Dónde nos encontramos</h2>
+            <iframe class="mapa" title="Mapa de San Javier, Traslasierra" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3382.5769961506558!2d-65.032535024368!3d-32.02657017398626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2d6998582a8af%3A0x619208a5a0ee336a!2sSan%20Javier%2C%20Traslasierra!5e0!3m2!1ses!2sar!4v1790597059607!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </section>
+    </main>
+
+    <footer class="pie-principal">
+        <p class="copyright">&copy; 2026 Retiro Sustentable. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
