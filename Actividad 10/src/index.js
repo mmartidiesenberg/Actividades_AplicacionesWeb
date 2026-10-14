@@ -55,3 +55,4 @@ for (let i = 0; i < 20; i++) {
         console.log(`El número ${i} es impar`);
     }
 }
+
