@@ -1,4 +1,4 @@
-//FUNCIONES DE DECLARACIÓN
+//Declaración
 
 
 // a) 
@@ -25,7 +25,7 @@ const resultadoEdad = esMayorDeEdad(20)
 console.log(resultadoEdad) 
 
 
-//FUNCIONES DE FLECHA
+//Flecha
 
 // a)
 const esMayorDeEdadFlecha = (edad) => {
@@ -56,7 +56,7 @@ for (let i = 0; i <= 10; i++) {
 }
 
 
-//FUNCIONES CALLBACK
+//Callback
 
 //a
 const suma = (a, b) => {
