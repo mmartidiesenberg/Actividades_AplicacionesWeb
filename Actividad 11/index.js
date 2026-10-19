@@ -9,9 +9,9 @@ saludar()
 
 // b) 
 function saludarPersona(nombre) {
-    console.log(`¡Hola ${nombre}, bienvenido!`)
+    console.log(`¡Hola ${nombre}, bienvenida!`)
 }
-saludarPersona("Andrés")
+saludarPersona("Martina")
 
 // c)
 function esMayorDeEdad(edad) {
