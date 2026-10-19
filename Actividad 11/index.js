@@ -22,7 +22,7 @@ function esMayorDeEdad(edad) {
     }
 }
 const resultadoEdad = esMayorDeEdad(20)
-console.log(resultadoEdad) // true
+console.log(resultadoEdad) 
 
 
 //FUNCIONES DE FLECHA
