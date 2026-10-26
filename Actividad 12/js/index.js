@@ -1,4 +1,4 @@
-// ==================== 1. ARREGLOS ====================
+//1. Arreglos
 
 // 1.a) Cargar 5 números con prompt() y push()
 console.log("--- 1.a) Cinco números ---");
@@ -46,7 +46,7 @@ const frutasConNa = frutasOriginal.filter((fruta) => {
 console.log(frutasConNa);
 
 
-// ==================== 2. OBJETOS ====================
+//2. Objetos
 
 // 2.a) Un objeto de producto de indumentaria
 console.log("--- 2.a) Objeto producto ---");
